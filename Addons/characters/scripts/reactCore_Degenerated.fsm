@@ -1,0 +1,95 @@
+/*%FSM<COMPILE "C:\Bis\fsmeditor\scriptedFSM.cfg, reactCore_Degenerated">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"React",0,250,-34.168354,-111.404747,55.831642,-61.404758,0.000000,"React"};
+item1[] = {"Determine__langu",2,250,-34.858612,65.176559,55.141403,115.176582,0.000000,"Determine " \n "language"};
+item2[] = {"Always",8,218,-34.733501,-32.375473,55.266476,17.624521,0.000000,"Always"};
+item3[] = {"Always",8,218,-34.733509,171.483215,55.266460,221.483215,0.000000,"Always"};
+item4[] = {"_",-1,250,256.017700,256.017700,291.061951,256.017700,0.000000,""};
+item5[] = {"Respond__don_t_u",1,4346,-46.717236,271.480225,68.592545,321.480347,0.000000,"Respond " \n "don't understand"};
+version=1;
+class LayoutItems
+{
+	class Item4
+	{
+		class ItemInfo
+		{
+			FontFace="Arial";
+			FontHeight=10.000000;
+			lStyle=1;
+		};
+	};
+};
+link0[] = {0,2};
+link1[] = {1,3};
+link2[] = {2,1};
+link3[] = {3,5};
+globals[] = {0.000000,0,0,0,0,640,480,1,17,6316128,1,-224.441101,208.438446,453.348419,-141.766144,571,785,1};
+window[] = {0,-1,-1,-32000,-32000,938,61,1226,10,1,589};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "reactCore_Degenerated";
+  class States
+  {
+    /*%FSM<STATE "React">*/
+    class React
+    {
+      name = "React";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Determine__langu";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Determine__langu">*/
+    class Determine__langu
+    {
+      name = "Determine__langu";
+      init = /*%FSM<STATEINIT""">*/"private [""_languages"", ""_language""];" \n "_languages = getArray(configFile >> ""CfgVehicles"" >> (typeOf _this) >> ""languages"");" \n "_language = _languages select 0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Respond__don_t_u";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respond__don_t_u">*/
+    class Respond__don_t_u
+    {
+      name = "Respond__don_t_u";
+      init = /*%FSM<STATEINIT""">*/"private [""_sentence""];" \n "switch (floor (random 3)) do " \n "{" \n "	case 0: {_sentence = ""SorryIDontUnderstand""};" \n "	case 1: {_sentence = ""WhatAreYouSaying""};" \n "	case 2: {_sentence = ""IDontKnowWhatYouMean""};" \n "};" \n "" \n "_this kbTell [_from, _topic, (_sentence + ""_"" + _language)];" \n "" \n "//Determine remaining languages that can be tried." \n "_languages = _languages - [_language];" \n "" \n "//Any language remain for _this?" \n "if ((count _languages) > 0) then " \n "{" \n "	//Find the best Core sentence." \n "	private [""_sentence""];" \n "	_sentence = """";" \n "	if (""EN"" in _languages) then " \n "	{" \n "		_sentence = _sentence + ""English"";" \n "	};" \n "" \n "	if (""CZ"" in _languages) then " \n "	{" \n "		_sentence = _sentence + ""Czech"";" \n "	};" \n "" \n "	if (""RU"" in _languages) then " \n "	{" \n "		_sentence = _sentence + ""Russian"";" \n "	};" \n "" \n "	_this kbTell [_from, ""core"", _sentence];" \n "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="React";
+  finalStates[] =
+  {
+    "Respond__don_t_u",
+  };
+};
+/*%FSM</COMPILE>*/

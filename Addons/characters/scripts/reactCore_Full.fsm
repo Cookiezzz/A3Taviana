@@ -1,0 +1,1153 @@
+/*%FSM<COMPILE "C:\Bis\fsmeditor\scriptedFSM.cfg, reactCore_Full">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"React",0,250,-39.045952,-116.282394,50.954044,-66.282372,0.000000,"React"};
+item1[] = {"Otherwise",8,218,-723.987122,177.194931,-633.987061,227.194931,0.000000,"Otherwise"};
+item2[] = {"_",-1,250,488.430115,263.351898,523.474365,263.351898,0.000000,""};
+item3[] = {"Greeting_",4,218,-38.545578,171.731186,51.454399,221.731186,1.000000,"Greeting?"};
+item4[] = {"No_reaction",1,250,-738.311951,281.836182,-623.002319,331.836243,0.000000,"No reaction"};
+item5[] = {"Determine__langu",2,250,-39.395931,38.270428,50.604084,88.270447,0.000000,"Determine " \n "language"};
+item6[] = {"Always",8,218,-40.521492,-40.521606,49.478477,9.478397,0.000000,"Always"};
+item7[] = {"Weather_",4,218,492.792328,178.958496,582.792297,228.958496,2.000000,"Weather?"};
+item8[] = {"Check_forecast",2,250,490.999146,450.263733,580.999084,500.263733,0.000000,"Check forecast"};
+item9[] = {"__1",-1,250,861.891724,262.113739,896.935913,262.113739,0.000000,""};
+item10[] = {"Targets_",4,218,872.366211,176.701614,962.366089,226.701614,2.000000,"Targets?"};
+item11[] = {"Check_asked__las",2,250,872.385742,277.233673,962.385864,327.233673,0.000000,"Check asked " \n "last"};
+item12[] = {"__2",-1,250,1071.140869,259.637421,1106.185059,259.637421,0.000000,""};
+item13[] = {"Location_",4,218,1326.938477,180.608109,1416.938477,230.608109,2.000000,"Location?"};
+item14[] = {"Check_asked__las_1",2,250,1323.948975,285.147125,1413.949097,335.147125,0.000000,"Check asked " \n "last"};
+item15[] = {"Determine_partner",2,250,-58.703941,736.530701,66.500191,786.530701,0.000000,"Determine partner " \n "combination"};
+item16[] = {"Send_greeting",1,250,-71.683266,2400.132324,40.099396,2450.132813,0.000000,"Send greeting"};
+item17[] = {"Determine_instigator",2,250,-63.589966,1405.902832,61.614143,1459.203125,0.000000,"Determine instigator " \n "morale"};
+item18[] = {"Determine_gender",2,250,-62.737640,1553.143799,62.466469,1606.444092,0.000000,"Determine gender " \n "combination"};
+item19[] = {"Determine_time_",2,250,-60.906708,1737.070313,64.297401,1790.370850,0.000000,"Determine time " \n "of day"};
+item20[] = {"Determine_combat",2,250,-277.849976,925.635437,-152.645813,975.635437,0.000000,"Determine combat " \n "situation"};
+item21[] = {"Determine_rank_",2,250,-278.465820,1085.630127,-153.261719,1135.630005,0.000000,"Determine rank " \n "difference"};
+item22[] = {"Determine_instigator_1",2,250,120.747009,924.455505,245.951157,977.755920,0.000000,"Determine instigator " \n "cooperation"};
+item23[] = {"Select_random__",2,250,-66.927811,2057.131104,58.276234,2110.431641,0.000000,"Select random, " \n "matching greeting, " \n "gesture and mimic"};
+item24[] = {"Otherwise",8,218,-41.813499,832.892273,48.186562,882.892151,0.000000,"Otherwise"};
+item25[] = {"Civilian__to__Co",4,218,112.952515,822.094666,255.141068,899.088806,1.000000,"Civilian " \n "to " \n "Combatant"};
+item26[] = {"Combatant__to__C",4,218,-285.713623,818.916260,-139.026108,896.810181,2.000000,"Combatant " \n "to " \n "Combatant"};
+item27[] = {"Always",8,218,139.044678,1022.316956,229.044617,1072.316895,0.000000,"Always"};
+item28[] = {"Always",8,218,-261.362915,1002.175842,-171.362732,1052.175781,0.000000,"Always"};
+item29[] = {"Otherwise",8,218,-184.396790,1160.608643,-94.396851,1210.608643,0.000000,"Otherwise"};
+item30[] = {"Always",8,218,-44.736046,1482.351318,45.263954,1532.351318,0.000000,"Always"};
+item31[] = {"Always",8,218,-45.086266,1642.304443,44.913765,1692.304688,0.000000,"Always"};
+item32[] = {"Always",8,218,-42.372581,1829.948730,47.627449,1879.948730,0.000000,"Always"};
+item33[] = {"Otherwise",8,218,-49.527779,2145.545898,40.472221,2195.545410,0.000000,"Otherwise"};
+item34[] = {"Similar",8,218,361.729828,560.088867,451.729828,610.088867,0.000000,"Similar"};
+item35[] = {"Rain",4,218,490.575623,560.081787,580.575623,610.081787,1.000000,"Rain"};
+item36[] = {"Clear",4,218,624.798645,559.055969,714.798645,609.055969,1.000000,"Clear"};
+item37[] = {"Respond_similar",1,250,348.670776,829.536011,463.980652,879.536133,0.000000,"Respond similar"};
+item38[] = {"Respond_rain",1,250,478.633453,828.517334,593.943115,878.517456,0.000000,"Respond rain"};
+item39[] = {"Respond_clear",1,250,610.633362,828.531555,725.943176,878.531677,0.000000,"Respond clear"};
+item40[] = {"Check_asked__las_2",2,250,490.960632,281.417084,580.960754,331.417084,0.000000,"Check asked " \n "last"};
+item41[] = {"Respond_too_soon",1,250,1887.579712,513.483948,2002.889282,563.484070,0.000000,"Respond too soon"};
+item42[] = {"Too_soon",4,218,601.470093,354.300629,691.470093,404.300629,1.000000,"Too soon"};
+item43[] = {"Too_soon",4,218,988.925720,352.263214,1078.925781,402.263214,1.000000,"Too soon"};
+item44[] = {"Too_soon",4,218,1441.771118,356.935577,1531.771240,406.935577,1.000000,"Too soon"};
+item45[] = {"",7,210,642.669067,429.399902,650.669067,437.399902,0.000000,""};
+item46[] = {"",7,210,1030.133667,429.672211,1038.133545,437.672211,0.000000,""};
+item47[] = {"",7,210,1482.971313,429.060913,1490.971313,437.060913,0.000000,""};
+item48[] = {"Otherwise",8,218,491.328796,354.434967,581.328857,404.434784,0.000000,"Otherwise"};
+item49[] = {"Otherwise",8,218,868.788330,352.715485,958.788391,402.715302,0.000000,"Otherwise"};
+item50[] = {"Otherwise",8,218,1322.376221,356.342316,1412.376221,406.342133,0.000000,"Otherwise"};
+item51[] = {"Enemy_Targets__q",2,250,869.051147,450.239990,959.051147,500.239990,0.000000,"Enemy Targets " \n "query"};
+item52[] = {"Not_found",8,218,1175.649780,449.760773,1265.649780,499.761047,0.000000,"Not found"};
+item53[] = {"Found",4,218,869.235168,559.696899,959.235168,609.696899,1.000000,"Found"};
+item54[] = {"Targets__aggrega",2,250,870.107666,651.071594,960.107666,701.071594,0.000000,"Targets " \n "aggregation"};
+item55[] = {"A_lot",4,218,794.991821,730.533020,884.991821,780.533020,1.000000,"A lot"};
+item56[] = {"Otherwise",8,218,933.159851,731.401794,1023.159912,781.401672,0.000000,"Otherwise"};
+item57[] = {"Respond__many_ta",2,250,795.441101,828.000244,885.441101,878.000244,0.000000,"Respond " \n "many targets"};
+item58[] = {"Respond__targets",1,250,920.518188,908.336853,1035.827881,958.336975,0.000000,"Respond " \n "targets"};
+item59[] = {"Always",8,218,796.286499,907.470154,886.286499,957.470093,0.000000,"Always"};
+item60[] = {"Thanks",4,218,-387.404938,173.084595,-297.405151,223.084625,0.000000,"Thanks"};
+item61[] = {"Respond_thanks",1,250,-400.329712,285.823578,-285.020111,335.823639,0.000000,"Respond thanks"};
+item62[] = {"Where_",4,218,1322.652100,549.573242,1412.652222,599.573242,1.000000,"Where?"};
+item63[] = {"Closest__settlement",4,218,1432.345947,540.917786,1547.299194,607.233276,1.000000,"Closest " \n "settlement?"};
+item64[] = {"Name__settlement",4,218,1562.025269,540.917786,1676.978516,607.233276,1.000000,"Name " \n "settlement?"};
+item65[] = {"Respond__where",1,250,1309.987183,822.329651,1425.297119,872.329773,0.000000,"Respond " \n "where"};
+item66[] = {"Respond__closest",1,250,1432.462891,823.265991,1547.772827,873.266113,0.000000,"Respond " \n "closest"};
+item67[] = {"Respond__name",1,250,1562.833130,822.344727,1678.143066,872.344849,0.000000,"Respond " \n "name"};
+item68[] = {"Determine__knowl",2,250,1321.494507,458.948822,1411.494507,508.948822,0.000000,"Determine " \n "knowledge"};
+item69[] = {"",7,210,1940.503174,428.897125,1948.503174,436.897125,0.000000,""};
+item70[] = {"Respond__clueles",1,250,1698.223755,821.286926,1813.533691,871.287048,0.000000,"Respond " \n "clueless"};
+item71[] = {"No_idea",4,218,1712.640625,549.059143,1802.640625,599.059143,2.000000,"No idea"};
+item72[] = {"Determine_specific",2,250,-366.863892,1265.722900,-241.659607,1315.722900,0.000000,"Determine specific " \n "rank"};
+item73[] = {"No_reaction_1",1,250,-247.502426,2237.142090,-157.502426,2287.142090,0.000000,"No reaction"};
+item74[] = {"Lower_ranking",4,218,-363.256226,1153.314697,-244.021057,1225.867432,1.000000,"Lower-ranking"};
+item75[] = {"Always",8,218,-265.207520,1352.038574,-175.207458,1402.038574,0.000000,"Always"};
+item76[] = {"No_sentence__fou",4,218,-263.677368,2131.619629,-142.097641,2207.037598,1.000000,"No sentence " \n "found"};
+item77[] = {"Check_time_since",2,250,-58.330055,556.878662,66.874100,606.878723,0.000000,"Check time since " \n "last greeting"};
+item78[] = {"Too_soon",4,218,-215.522659,592.461243,-125.522736,642.461243,1.000000,"Too soon"};
+item79[] = {"No_reaction_2",1,250,-214.903519,683.334778,-124.903625,733.334778,0.000000,"No reaction"};
+item80[] = {"Otherwise",8,218,-42.830276,645.806580,47.169785,695.806458,0.000000,"Otherwise"};
+item81[] = {"Init_greeting__h",2,250,-40.844521,239.881989,49.155540,289.881989,0.000000,"Init greeting " \n "history"};
+item82[] = {"Always",8,218,-39.490028,483.893738,50.509972,533.894043,0.000000,"Always"};
+item83[] = {"Register_greeting",2,250,-55.164154,408.455658,62.731232,458.455627,0.000000,"Register greeting " \n "from player"};
+item84[] = {"Register_in__greeting",2,250,-55.443359,2228.609863,34.556633,2278.609863,0.000000,"Register in " \n "greeting history"};
+item85[] = {"Always",8,218,-54.958130,2305.233398,35.041862,2355.233398,0.000000,"Always"};
+item86[] = {"Always",8,218,-41.570045,322.692169,48.429955,372.692413,0.000000,"Always"};
+item87[] = {"Determine_surrender",2,4346,-65.695969,1899.167358,59.508080,1952.467651,0.000000,"Determine surrender " \n "status"};
+item88[] = {"Always",8,218,-53.838795,1978.203735,36.161266,2028.203491,0.000000,"Always"};
+item89[] = {"Not_found",8,218,1175.479126,650.971130,1265.479126,700.971375,0.000000,"Not found"};
+item90[] = {"Respond__no_targ",1,250,1163.487427,824.241333,1278.797363,874.241394,0.000000,"Respond " \n "no targets"};
+item91[] = {"Friendly_Targets",2,250,1175.452148,556.676514,1265.452148,606.676514,0.000000,"Friendly Targets" \n "query"};
+item92[] = {"Found",4,218,1047.490356,650.832336,1137.490356,700.832458,1.000000,"Found"};
+version=1;
+class LayoutItems
+{
+	class Item2
+	{
+		class ItemInfo
+		{
+			FontFace="Arial";
+			FontHeight=10.000000;
+			lStyle=1;
+		};
+	};
+	class Item9
+	{
+		class ItemInfo
+		{
+			FontFace="Arial";
+			FontHeight=10.000000;
+			lStyle=1;
+		};
+	};
+	class Item12
+	{
+		class ItemInfo
+		{
+			FontFace="Arial";
+			FontHeight=10.000000;
+			lStyle=1;
+		};
+	};
+};
+link0[] = {0,6};
+link1[] = {1,4};
+link2[] = {3,81};
+link3[] = {5,1};
+link4[] = {5,3};
+link5[] = {5,7};
+link6[] = {5,10};
+link7[] = {5,13};
+link8[] = {5,60};
+link9[] = {6,5};
+link10[] = {7,40};
+link11[] = {8,34};
+link12[] = {8,35};
+link13[] = {8,36};
+link14[] = {10,11};
+link15[] = {11,43};
+link16[] = {11,49};
+link17[] = {13,14};
+link18[] = {14,44};
+link19[] = {14,50};
+link20[] = {15,24};
+link21[] = {15,25};
+link22[] = {15,26};
+link23[] = {17,30};
+link24[] = {18,31};
+link25[] = {19,32};
+link26[] = {20,28};
+link27[] = {21,29};
+link28[] = {21,74};
+link29[] = {22,27};
+link30[] = {23,33};
+link31[] = {23,76};
+link32[] = {24,17};
+link33[] = {25,22};
+link34[] = {26,20};
+link35[] = {27,17};
+link36[] = {28,21};
+link37[] = {29,17};
+link38[] = {30,18};
+link39[] = {31,19};
+link40[] = {32,87};
+link41[] = {33,84};
+link42[] = {34,37};
+link43[] = {35,38};
+link44[] = {36,39};
+link45[] = {40,42};
+link46[] = {40,48};
+link47[] = {42,45};
+link48[] = {43,46};
+link49[] = {44,47};
+link50[] = {45,46};
+link51[] = {46,47};
+link52[] = {47,69};
+link53[] = {48,8};
+link54[] = {49,51};
+link55[] = {50,68};
+link56[] = {51,52};
+link57[] = {51,53};
+link58[] = {52,91};
+link59[] = {53,54};
+link60[] = {54,55};
+link61[] = {54,56};
+link62[] = {55,57};
+link63[] = {56,58};
+link64[] = {57,59};
+link65[] = {59,58};
+link66[] = {60,61};
+link67[] = {62,65};
+link68[] = {63,66};
+link69[] = {64,67};
+link70[] = {68,62};
+link71[] = {68,63};
+link72[] = {68,64};
+link73[] = {68,71};
+link74[] = {69,41};
+link75[] = {71,70};
+link76[] = {72,75};
+link77[] = {74,72};
+link78[] = {75,17};
+link79[] = {76,73};
+link80[] = {77,78};
+link81[] = {77,80};
+link82[] = {78,79};
+link83[] = {80,15};
+link84[] = {81,86};
+link85[] = {82,77};
+link86[] = {83,82};
+link87[] = {84,85};
+link88[] = {85,16};
+link89[] = {86,83};
+link90[] = {87,88};
+link91[] = {88,23};
+link92[] = {89,90};
+link93[] = {91,89};
+link94[] = {91,92};
+link95[] = {92,54};
+globals[] = {0.000000,0,0,0,0,640,480,1,126,6316128,1,-562.990295,575.198792,2643.720215,1286.648560,598,713,1};
+window[] = {0,-1,-1,-1,-1,902,46,1218,46,1,616};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "reactCore_Full";
+  class States
+  {
+    /*%FSM<STATE "React">*/
+    class React
+    {
+      name = "React";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Determine__langu";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "No_reaction">*/
+    class No_reaction
+    {
+      name = "No_reaction";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Determine__langu">*/
+    class Determine__langu
+    {
+      name = "Determine__langu";
+      init = /*%FSM<STATEINIT""">*/"//TODO: Remove _hint everywhere." \n "private [""_postFix"", ""_hint""];" \n "switch (_topic) do " \n "{" \n "	case ""core_en"": {_postFix = ""EN""; _hint = ""("" + (localize ""STR_CONV_CORE_HINT_ENGLISH"") + "")""};" \n "	case ""core_ru"": {_postFix = ""RU""; _hint = ""("" + (localize ""STR_CONV_CORE_HINT_RUSSIAN"") + "")""};" \n "	case ""core_cz"": {_postFix = ""CZ""; _hint = ""("" + (localize ""STR_CONV_CORE_HINT_CHERNARUSSIAN"") + "")""};" \n "		" \n "	default {};	" \n "};" \n "" \n "//We want to access the config only once." \n "if (isNil ""BIS_coreTalkSentences"") then " \n "{" \n "	BIS_coreTalkSentences = [];" \n "	BIS_coreTalkTags = [];" \n "	" \n "	private [""_cfgTalkSentences""];" \n "	_cfgTalkSentences = configFile >> ""CfgTalkSentences"";" \n "	" \n "	for ""_i"" from 0 to ((count _cfgTalkSentences) - 1) do " \n "	{" \n "		private [""_candidate""];" \n "		_candidate = _cfgTalkSentences select _i;" \n "" \n "		BIS_coreTalkSentences = BIS_coreTalkSentences + [configName _candidate];" \n "		BIS_coreTalkTags = BIS_coreTalkTags + [getArray(_candidate >> ""tags"")];" \n "	};" \n "};	" \n "" \n "//Compose a list of all sentences that can be greetings once." \n "if (isNil ""BIS_coreTalkGreetings"") then " \n "{" \n "	private [""_candidates"", ""_queryTags""];" \n "	_candidates = [];" \n "	_queryTags = [""greeting""];" \n "	" \n "	for ""_i"" from 0 to ((count BIS_coreTalkSentences) - 1) do " \n "	{" \n "		private [""_candidate"", ""_candidateTags""];" \n "		_candidate = BIS_coreTalkSentences select _i;" \n "		_candidateTags = BIS_coreTalkTags select _i;" \n "		" \n "		//Are all tags in this candidate?" \n "		if (({_x in _candidateTags} count _queryTags) == (count _queryTags)) then " \n "		{" \n "			_candidates = _candidates + [_candidate];" \n "		};" \n "	};" \n "	" \n "	//Filter bad responses (no respect)." \n "	_candidates = _candidates - " \n "	[" \n "		""IWillTellYouNothing"", " \n "		""ImNotSayingAnotherWord"", " \n "		""KeepingMyMouthShut"", " \n "		""MindYourOwnBusiness"", " \n "		""GoBotherSomeoneElse""" \n "	];" \n "	" \n "	BIS_coreTalkGreetings = [];" \n "" \n "	{" \n "		BIS_coreTalkGreetings = BIS_coreTalkGreetings + [_x + ""_EN"", _x + ""_RU"", _x + ""_CZ""];" \n "	} " \n "	forEach _candidates;" \n "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Targets_">*/
+        class Targets_
+        {
+          priority = 2.000000;
+          to="Check_asked__las";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_sentenceId in " \n "[" \n "	""DidYouNoticeAnythingOutOfTheOrdinaryRecently_EN"", " \n "	""DidYouNoticeAnythingOutOfTheOrdinaryRecently_RU"", " \n "	""DidYouNoticeAnythingOutOfTheOrdinaryRecently_CZ"", " \n "	""DidYouSeeAnyoneElseAroundHere_EN"", " \n "	""DidYouSeeAnyoneElseAroundHere_RU"", " \n "	""DidYouSeeAnyoneElseAroundHere_CZ""" \n "]"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Weather_">*/
+        class Weather_
+        {
+          priority = 2.000000;
+          to="Check_asked__las_2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_sentenceId in " \n "[" \n "	""NiceWeatherIsntIt_EN"", " \n "	""NiceWeatherIsntIt_RU"", " \n "	""NiceWeatherIsntIt_CZ"", " \n "	""ThatsSomeNastyWeatherAintIt_EN"", " \n "	""ThatsSomeNastyWeatherAintIt_RU"", " \n "	""ThatsSomeNastyWeatherAintIt_CZ"", " \n "	""AnyWordOnWhatTheWeathersGonnaDo_EN"", " \n "	""AnyWordOnWhatTheWeathersGonnaDo_RU"", " \n "	""AnyWordOnWhatTheWeathersGonnaDo_CZ"", " \n "	""WhatsTheWeatherForecastLike_EN"", " \n "	""WhatsTheWeatherForecastLike_RU"", " \n "	""WhatsTheWeatherForecastLike_CZ""" \n "]"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Location_">*/
+        class Location_
+        {
+          priority = 2.000000;
+          to="Check_asked__las_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_sentenceId in " \n "[" \n "	""WhereAreWe_EN"", " \n "	""WhereAreWe_RU"", " \n "	""WhereAreWe_CZ"", " \n "	""DoYouKnowWhereWeAre_EN"", " \n "	""DoYouKnowWhereWeAre_RU"", " \n "	""DoYouKnowWhereWeAre_CZ"", " \n "	""WhereIsTheClosestSettlement_EN"", " \n "	""WhereIsTheClosestSettlement_RU"", " \n "	""WhereIsTheClosestSettlement_CZ"", " \n "	""CanYouPointMeToTheNearestSettlement_EN"", " \n "	""CanYouPointMeToTheNearestSettlement_RU"", " \n "	""CanYouPointMeToTheNearestSettlement_CZ"", " \n "	""WhatIsTheNameOfThisSettlement_EN"", " \n "	""WhatIsTheNameOfThisSettlement_RU"", " \n "	""WhatIsTheNameOfThisSettlement_CZ"", " \n "	""WhatSettlementIsThis_EN"", " \n "	""WhatSettlementIsThis_RU"", " \n "	""WhatSettlementIsThis_CZ""" \n "]"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Greeting_">*/
+        class Greeting_
+        {
+          priority = 1.000000;
+          to="Init_greeting__h";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_sentenceId in BIS_coreTalkGreetings"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Thanks">*/
+        class Thanks
+        {
+          priority = 0.000000;
+          to="Respond_thanks";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"false"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Otherwise">*/
+        class Otherwise
+        {
+          priority = 0.000000;
+          to="No_reaction";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check_forecast">*/
+    class Check_forecast
+    {
+      name = "Check_forecast";
+      init = /*%FSM<STATEINIT""">*/"private [""_forecast""];" \n "_forecast = (overcast - overcastForecast);"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Rain">*/
+        class Rain
+        {
+          priority = 1.000000;
+          to="Respond_rain";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_forecast < -0.4"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Clear">*/
+        class Clear
+        {
+          priority = 1.000000;
+          to="Respond_clear";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_forecast > 0.4"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Similar">*/
+        class Similar
+        {
+          priority = 0.000000;
+          to="Respond_similar";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check_asked__las">*/
+    class Check_asked__las
+    {
+      name = "Check_asked__las";
+      init = /*%FSM<STATEINIT""">*/"private [""_tooSoon""];" \n "_tooSoon = false;" \n "" \n "{" \n "	if (_this kbWasSaid [_from, _topic, _x, 60]) exitWith {_tooSoon = true};" \n "} " \n "forEach " \n "[" \n "	""ISawALotOfUnits_EN"", " \n "	""ISawALotOfUnits_RU"", " \n "	""ISawALotOfUnits_CZ"", " \n "	""Targets"", " \n "	""NoSorry_EN"", " \n "	""NoSorry_RU"", " \n "	""NoSorry_CZ"", " \n "	""IDidntSeeAnything_EN"", " \n "	""IDidntSeeAnything_RU"", " \n "	""IDidntSeeAnything_CZ""" \n "];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Too_soon">*/
+        class Too_soon
+        {
+          priority = 1.000000;
+          to="Respond_too_soon";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_tooSoon"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Otherwise">*/
+        class Otherwise
+        {
+          priority = 0.000000;
+          to="Enemy_Targets__q";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check_asked__las_1">*/
+    class Check_asked__las_1
+    {
+      name = "Check_asked__las_1";
+      init = /*%FSM<STATEINIT""">*/"private [""_tooSoon""];" \n "_tooSoon = false;" \n "" \n "{" \n "	if (_this kbWasSaid [_from, _topic, _x, 60]) exitWith {_tooSoon = true};" \n "} " \n "forEach " \n "[" \n "	""Location"", " \n "	""SorryImNotFromAroundHere_EN"", " \n "	""SorryImNotFromAroundHere_RU"", " \n "	""SorryImNotFromAroundHere_CZ"", " \n "	""NoIdeaImNotFromAroundHere_EN"", " \n "	""NoIdeaImNotFromAroundHere_RU"", " \n "	""NoIdeaImNotFromAroundHere_CZ""" \n "];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Too_soon">*/
+        class Too_soon
+        {
+          priority = 1.000000;
+          to="Respond_too_soon";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_tooSoon"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Otherwise">*/
+        class Otherwise
+        {
+          priority = 0.000000;
+          to="Determine__knowl";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Determine_partner">*/
+    class Determine_partner
+    {
+      name = "Determine_partner";
+      init = /*%FSM<STATEINIT""">*/"private [""_tags""];" \n "_tags = [""greeting"", ""answer""];" \n "" \n "//Determine what type of speakers are in a conversation." \n "private [""_typeTag"", ""_sideThis"", ""_sideFrom""];" \n "_sideThis = side _this;" \n "_sideFrom = side _from;" \n "" \n "if (_sideThis == civilian) then " \n "{" \n "	_typeTag = ""civilianTo"";" \n "} " \n "else " \n "{" \n "	_typeTag = ""combatantTo"";	" \n "};" \n "" \n "if (_sideFrom == civilian) then " \n "{" \n "	_typeTag = _typeTag + ""Civilian"";	" \n "} " \n "else " \n "{" \n "	_typeTag = _typeTag + ""Combatant"";" \n "};" \n "" \n "_tags = _tags + [_typeTag];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Combatant__to__C">*/
+        class Combatant__to__C
+        {
+          priority = 2.000000;
+          to="Determine_combat";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_typeTag == ""combatantToCombatant"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Civilian__to__Co">*/
+        class Civilian__to__Co
+        {
+          priority = 1.000000;
+          to="Determine_instigator_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_typeTag == ""civilianToCombatant"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Otherwise">*/
+        class Otherwise
+        {
+          priority = 0.000000;
+          to="Determine_instigator";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Send_greeting">*/
+    class Send_greeting
+    {
+      name = "Send_greeting";
+      init = /*%FSM<STATEINIT""">*/"_this glanceAt _from;" \n "" \n "private [""_PlayerInitiated""];" \n "if (isNil ""_PlayerInitiated"") then {_PlayerInitiated = false};" \n "" \n "_this kbTell [_from, _topic, (_sentence + ""_"" + _postFix), [""PlayerInitiated"", _PlayerInitiated, """", []]];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Determine_instigator">*/
+    class Determine_instigator
+    {
+      name = "Determine_instigator";
+      init = /*%FSM<STATEINIT""">*/"//TODO: When negative, often don't approach at all?" \n "//We will not speak to captives in a friendly way for now." \n "if (!(captive _from)) then " \n "{" \n "	private [""_morale""];" \n "	_morale = morale _this;" \n "" \n "	if (_morale > 0.3) then " \n "	{" \n "		_tags = _tags + [""positive""];" \n "	} " \n "	else " \n "	{" \n "		if (_morale < 0) then " \n "		{" \n "			_tags = _tags + [""negative""];" \n "		} " \n "		else " \n "		{" \n "			_tags = _tags + [""neutral""];" \n "		};" \n "	};" \n "} " \n "else " \n "{" \n "	_tags = _tags + [""negative""];" \n "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Determine_gender";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Determine_gender">*/
+    class Determine_gender
+    {
+      name = "Determine_gender";
+      init = /*%FSM<STATEINIT""">*/"private [""_womanThis"", ""_womanFrom""];" \n "_womanThis = getNumber(configFile >> ""CfgVehicles"" >> (typeOf _this) >> ""woman"");" \n "_womanFrom = getNumber(configFile >> ""CfgVehicles"" >> (typeOf _from) >> ""woman"");" \n "" \n "if ((_womanThis == 1) && (_womanFrom != 1)) then " \n "{" \n "	_tags = _tags + [""femaleToMale""];" \n "} " \n "else " \n "{" \n "	if ((_womanThis != 1) && (_womanFrom == 1)) then " \n "	{" \n "		_tags = _tags + [""maleToFemale""];" \n "	} " \n "	else " \n "	{" \n "		if ((_womanThis != 1) && (_womanFrom != 1)) then " \n "		{" \n "			_tags = _tags + [""maleToMale""];" \n "		} " \n "		else " \n "		{" \n "			_tags = _tags + [""femaleToFemale""];" \n "		};" \n "	};" \n "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Determine_time_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Determine_time_">*/
+    class Determine_time_
+    {
+      name = "Determine_time_";
+      init = /*%FSM<STATEINIT""">*/"if ((dayTime > 6) && (dayTime < 12)) then " \n "{" \n "	_tags = _tags + [""morning""];" \n "} " \n "else " \n "{" \n "	if ((dayTime > 16) && (dayTime < 22)) then " \n "	{" \n "		_tags = _tags + [""evening""];" \n "	} " \n "	else " \n "	{" \n "		if ((dayTime >= 22) || (dayTime <= 6)) then " \n "		{" \n "			_tags = _tags + [""night""];" \n "		} " \n "		else " \n "		{" \n "			_tags = _tags + [""day""];" \n "		};" \n "	};" \n "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Determine_surrender";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Determine_combat">*/
+    class Determine_combat
+    {
+      name = "Determine_combat";
+      init = /*%FSM<STATEINIT""">*/"private [""_behaviour""];" \n "_behaviour = behaviour _this;" \n "" \n "if ((_behaviour == ""COMBAT"") || (_behaviour == ""STEALTH"")) then " \n "{" \n "	_tags = _tags + [""inCombat""];	" \n "} " \n "else " \n "{" \n "	_tags = _tags + [""notInCombat""];" \n "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Determine_rank_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Determine_rank_">*/
+    class Determine_rank_
+    {
+      name = "Determine_rank_";
+      init = /*%FSM<STATEINIT""">*/"private [""_rankTag"", ""_rankIdThis"", ""_rankIdFrom""];" \n "_rankIdThis = rankId _this;" \n "_rankIdFrom = rankId _from;" \n "" \n "//TODO: Remove?" \n "if ((typeName _rankIdThis) != ""SCALAR"") then " \n "{" \n "	_rankIdThis = 0;" \n "	debugLog (format [""Log: Show Joris: alive _this: %1"", alive _this]);" \n "	debugLog (format [""Log: Show Joris: typeOf _this: %1"", typeOf _this]);" \n "	debugLog (format [""Log: Show Joris: _rankIdThis: %1"", _rankIdThis]);" \n "};" \n "" \n "if ((typeName _rankIdFrom) != ""SCALAR"") then " \n "{" \n "	_rankIdFrom = 0;" \n "	debugLog (format [""Log: Show Joris: alive _from: %1"", alive _from]);" \n "	debugLog (format [""Log: Call Joris: typeOf _this: %1"", typeOf _from]);" \n "	debugLog (format [""Log: Call Joris: _rankIdFrom: %1"", _rankIdFrom]);" \n "};" \n "" \n "if (_rankIdThis > _rankIdFrom) then " \n "{" \n "	_rankTag = ""toLowerRank"";" \n "} " \n "else " \n "{" \n "	if (_rankIdThis < _rankIdFrom) then " \n "	{" \n "		_rankTag = ""toHigherRank"";" \n "	} " \n "	else " \n "	{" \n "		_rankTag = ""toSameRank"";" \n "	};" \n "};" \n "" \n "_tags = _tags + [_rankTag];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Lower_ranking">*/
+        class Lower_ranking
+        {
+          priority = 1.000000;
+          to="Determine_specific";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_rankTag == ""toLowerRank"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Otherwise">*/
+        class Otherwise
+        {
+          priority = 0.000000;
+          to="Determine_instigator";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Determine_instigator_1">*/
+    class Determine_instigator_1
+    {
+      name = "Determine_instigator_1";
+      init = /*%FSM<STATEINIT""">*/"//Based on RESpect system, if available." \n "private [""_respect""];" \n "_respect = _this getVariable ""respect"";" \n "if (!(isNil ""_respect"") && !(isNil ""BIS_fnc_getFactions"")) then " \n "{" \n "	private [""_index"", ""_respectThis""];" \n "	_index = [faction _from] call BIS_fnc_getFactions;" \n "	_respectThis = _respect select _index;" \n "" \n "	if (_respectThis < -0.2) then " \n "	{" \n "		_tags = _tags + [""noRespect""];" \n "	} " \n "	else " \n "	{" \n "		_tags = _tags + [""respect""];" \n "	};" \n "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Determine_instigator";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Select_random__">*/
+    class Select_random__
+    {
+      name = "Select_random__";
+      init = /*%FSM<STATEINIT""">*/"//We want to access the config only once." \n "if (isNil ""BIS_coreTalkSentences"") then " \n "{" \n "	BIS_coreTalkSentences = [];" \n "	BIS_coreTalkTags = [];" \n "	" \n "	private [""_cfgTalkSentences""];" \n "	_cfgTalkSentences = configFile >> ""CfgTalkSentences"";" \n "	" \n "	for ""_i"" from 0 to ((count _cfgTalkSentences) - 1) do " \n "	{" \n "		private [""_candidate""];" \n "		_candidate = _cfgTalkSentences select _i;" \n "		" \n "		BIS_coreTalkSentences = BIS_coreTalkSentences + [configName _candidate];" \n "		BIS_coreTalkTags = BIS_coreTalkTags + [getArray(_candidate >> ""tags"")];" \n "	};" \n "};	" \n "" \n "//Make a list of candidates which match all given tags." \n "private [""_candidates""];" \n "_candidates = [];" \n "" \n "for ""_i"" from 0 to ((count BIS_coreTalkSentences) - 1) do " \n "{" \n "	private [""_candidate"", ""_candidateTags""];" \n "	_candidate = BIS_coreTalkSentences select _i;" \n "	_candidateTags = BIS_coreTalkTags select _i;" \n "	" \n "	//Are all tags in this candidate?" \n "	if (({_x in _candidateTags} count _tags) == (count _tags)) then " \n "	{" \n "		_candidates = _candidates + [_candidate];" \n "	};" \n "};" \n "" \n "//TODO: remove." \n "//debugLog (format [""Log: %1"", _tags]);" \n "" \n "//Select a random sentence from the candidates." \n "private [""_sentence""];" \n "_sentence = _candidates select (floor (random (count _candidates)));" \n "" \n "if (!(isNil ""_sentence"")) then " \n "{" \n "	//Select good gesture, if any." \n "	//No gestures in combat." \n "	if (!(""inCombat"" in _tags)) then " \n "	{" \n "		if (""combatantToCombatant"" in _tags) then " \n "		{" \n "			//Combatants salute." \n "			_this playAction ""salute"";" \n "			_this spawn " \n "			{" \n "				sleep 2; " \n "				_this playAction ""saluteOff"";" \n "			};" \n "		} " \n "		else " \n "		{" \n "			if (""positive"" in _tags) then " \n "			{" \n "				//Happy people sometimes gesture." \n "				if ((random 1) > 0.5) then " \n "				{" \n "					if ((random 1) > 0.5) then " \n "					{" \n "						_this playAction ""GestureHi"";" \n "					} " \n "					else " \n "					{" \n "						_this playAction ""GestureHiB"";" \n "					};" \n "				};" \n "			};" \n "		};" \n "	};" \n "	" \n "	//Select good mimic, if any." \n "	if (""positive"" in _tags) then " \n "	{" \n "		_this setMimic ""Smile"";" \n "	} " \n "	else " \n "	{" \n "		if (""negative"" in _tags) then " \n "		{" \n "			if (""inCombat"" in _tags) then " \n "			{" \n "				_this setMimic ""Agresive"";" \n "			} " \n "			else " \n "			{" \n "				_this setMimic ""Angry"";" \n "			};" \n "		};" \n "	};" \n "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "No_sentence__fou">*/
+        class No_sentence__fou
+        {
+          priority = 1.000000;
+          to="No_reaction_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"isNil ""_sentence"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Otherwise">*/
+        class Otherwise
+        {
+          priority = 0.000000;
+          to="Register_in__greeting";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respond_similar">*/
+    class Respond_similar
+    {
+      name = "Respond_similar";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, (""SeemsLikeItllStayLikeThisForAWhile"" + ""_"" + _postFix)];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respond_rain">*/
+    class Respond_rain
+    {
+      name = "Respond_rain";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, (""IHeardWellGetSomeRainSoon"" + ""_"" + _postFix)];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respond_clear">*/
+    class Respond_clear
+    {
+      name = "Respond_clear";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, (""ThingsShouldBeClearingUpSoon"" + ""_"" + _postFix)];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check_asked__las_2">*/
+    class Check_asked__las_2
+    {
+      name = "Check_asked__las_2";
+      init = /*%FSM<STATEINIT""">*/"private [""_tooSoon""];" \n "_tooSoon = false;" \n "" \n "{" \n "	if (_this kbWasSaid [_from, _topic, _x, 60]) exitWith {_tooSoon = true};" \n "} " \n "forEach " \n "[" \n "	""SeemsLikeItllStayLikeThisForAWhile_EN"", " \n "	""SeemsLikeItllStayLikeThisForAWhile_RU"", " \n "	""SeemsLikeItllStayLikeThisForAWhile_CZ"", " \n "	""IHeardWellGetSomeRainSoon_EN"", " \n "	""IHeardWellGetSomeRainSoon_RU"", " \n "	""IHeardWellGetSomeRainSoon_CZ"", " \n "	""ThingsShouldBeClearingUpSoon_EN"", " \n "	""ThingsShouldBeClearingUpSoon_RU"", " \n "	""ThingsShouldBeClearingUpSoon_CZ""" \n "];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Too_soon">*/
+        class Too_soon
+        {
+          priority = 1.000000;
+          to="Respond_too_soon";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_tooSoon"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Otherwise">*/
+        class Otherwise
+        {
+          priority = 0.000000;
+          to="Check_forecast";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respond_too_soon">*/
+    class Respond_too_soon
+    {
+      name = "Respond_too_soon";
+      init = /*%FSM<STATEINIT""">*/"private [""_sentence""];" \n "switch (floor (random 3)) do " \n "{" \n "	case 0: {_sentence = ""StopAskingMeTheSameStuff""};	" \n "	case 1: {_sentence = ""YouAskedMeThatJustNow""};" \n "	case 2: {_sentence = ""AreYouKiddingMe""};" \n "	default {};" \n "};" \n "" \n "_this kbTell [_from, _topic, (_sentence + ""_"" + _postFix)];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Enemy_Targets__q">*/
+    class Enemy_Targets__q
+    {
+      name = "Enemy_Targets__q";
+      init = /*%FSM<STATEINIT""">*/"//Query for all targets matching conditions" \n "private [""_sides"", ""_enemySide"", ""_candidates""];" \n "_sides = [east, west, resistance];" \n "_enemySide = sideUnknown;" \n "" \n "//Determine the current enemy side." \n "{" \n "	private [""_friendly""];" \n "	_friendly = (side _from) getFriend _x;" \n "	if ((_friendly > -1) && (_friendly < 0.6)) exitWith {_enemySide = _x};" \n "} " \n "forEach (_sides - [side _from]);" \n "" \n "if (_enemySide != sideUnknown) then " \n "{" \n "	_candidates = _this targetsQuery [_from, _enemySide, """", """", """"];" \n "} " \n "else " \n "{" \n "	_candidates = [];" \n "};" \n "" \n "//We only want precise matches (enemies)." \n "private [""_candidatesTmp""];" \n "_candidatesTmp = [];" \n "{" \n "	if ((_x select 0) >= 1) then" \n "	{" \n "		_candidatesTmp = _candidatesTmp + [_x];" \n "	};" \n "} " \n "forEach _candidates;" \n "" \n "_candidates = _candidatesTmp;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Found">*/
+        class Found
+        {
+          priority = 1.000000;
+          to="Targets__aggrega";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(count _candidates) > 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Not_found">*/
+        class Not_found
+        {
+          priority = 0.000000;
+          to="Friendly_Targets";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Targets__aggrega">*/
+    class Targets__aggrega
+    {
+      name = "Targets__aggrega";
+      init = /*%FSM<STATEINIT""">*/"//_candidates sorted by matching." \n "private [""_bestMatch""];" \n "_bestMatch = (_candidates select 0) select 0;" \n "" \n "//Select only targets we want in the answer." \n "private [""_selected""];" \n "_selected = [];" \n "" \n "if (_bestMatch >= 1) then" \n "{" \n "	//Targets matching exactly" \n "	{" \n "		if ((_x select 0) >= 1) then" \n "		{" \n "			_selected = _selected + [_x];" \n "		};" \n "	} " \n "	forEach _candidates;" \n "}" \n "else" \n "{" \n "	//Targets matching enough" \n "	private [""_limit""];" \n "	_limit = 0.5 * _bestMatch;" \n "	{" \n "		if ((_x select 0) > _limit) then" \n "		{" \n "			_selected = _selected + [_x];" \n "		};" \n "	} " \n "	forEach _candidates;" \n "};" \n "" \n "//Pass query to enable pronounces substitution." \n "private [""_aggregation""];" \n "_aggregation = [_this, """", """", """", """"] targetsAggregate _selected;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "A_lot">*/
+        class A_lot
+        {
+          priority = 1.000000;
+          to="Respond__many_ta";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(count _aggregation) > 3"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Otherwise">*/
+        class Otherwise
+        {
+          priority = 0.000000;
+          to="Respond__targets";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respond__many_ta">*/
+    class Respond__many_ta
+    {
+      name = "Respond__many_ta";
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic, (""ISawALotOfUnits"" + ""_"" + _postFix)];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Respond__targets";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respond__targets">*/
+    class Respond__targets
+    {
+      name = "Respond__targets";
+      init = /*%FSM<STATEINIT""">*/"private [""_text"", ""_speech"", ""_arguments""];" \n "_text = """";" \n "_speech = [];" \n "_arguments = [];" \n "" \n "private [""_n""];" \n "_n = count _aggregation;" \n "" \n "private [""_ISawText"", ""_ISawSpeech"", ""_AndText"", ""_AndSpeech""];" \n "switch (_postFix) do " \n "{" \n "	case ""EN"": " \n "	{" \n "		_ISawText = localize ""STR_CONV_CORE_ISAW"";" \n "		_ISawSpeech = ""ISaw_EN"";" \n "		_AndText = localize ""STR_CONV_CORE_AND"";" \n "		_AndSpeech = ""And_EN"";" \n "	};" \n "	case ""RU"":" \n "	{" \n "		_ISawText = localize ""STR_CONV_CORE_ISAW"";" \n "		_ISawSpeech = ""ISaw_RU"";" \n "		_AndText = localize ""STR_CONV_CORE_AND"";" \n "		_AndSpeech = ""And_RU"";" \n "	};" \n "	case ""CZ"": " \n "	{" \n "		_ISawText = localize ""STR_CONV_CORE_ISAW"";" \n "		_ISawSpeech = ""ISaw_CZ"";" \n "		_AndText = localize ""STR_CONV_CORE_AND"";" \n "		_AndSpeech = ""And_CZ"";" \n "	};" \n "};" \n "" \n "_text = _text + (_ISawText + "" %UCOUNT0 %SIDE0 %UTYPE0 %PLACE0 %TIME0"");" \n "_speech = _speech + [_ISawSpeech, ""%UCOUNT0"", ""%SIDE0"", ""%UTYPE0"", ""%PLACE0"", ""%TIME0""];" \n "_arguments = _arguments + (_aggregation select 0);" \n "" \n "if (_n > 1) then" \n "{" \n "	private [""_text2"", ""_speech2""];" \n "	_text2 = ""%UCOUNT1 %SIDE1 %UTYPE1 %PLACE1 %TIME1"";" \n "	_speech2 =  [""%UCOUNT1"", ""%SIDE1"", ""%UTYPE1"", ""%PLACE1"", ""%TIME1""];" \n "	_arguments = _arguments + (_aggregation select 1);" \n "  " \n "	if (_n == 2) then" \n "	{" \n "		_text = _text + ("" "" + _AndText + "" "" + _text2);" \n "		_speech = _speech + ([_AndSpeech] + _speech2);" \n "	}" \n "	else" \n "	{" \n "		_text = _text + ("",  "" + _text2 + "" "" + _AndText + "" "" + ""%UCOUNT2 %SIDE2 %UTYPE2 %PLACE2 %TIME2"");" \n "		_speech = _speech + (_speech2 + [_AndSpeech, ""%UCOUNT2"", ""%SIDE2"", ""%UTYPE2"", ""%PLACE2"", ""%TIME2""]);" \n "		_arguments = _arguments + (_aggregation select 2);" \n "	};" \n "};" \n "" \n "_text = _text + ""."";" \n "" \n "_this kbTell [_from, _topic, [""Targets"" + ""_"" + _postFix, _text + "" "" + _hint, _speech]] + _arguments;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respond_thanks">*/
+    class Respond_thanks
+    {
+      name = "Respond_thanks";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respond__where">*/
+    class Respond__where
+    {
+      name = "Respond__where";
+      init = /*%FSM<STATEINIT""">*/"private [""_text"", ""_speech"", ""_arguments""];" \n "_arguments = [[""PLACE0"", [position _this, 5, """"]]];" \n "" \n "switch (floor (random 2)) do " \n "{" \n "	case 0: " \n "	{" \n "		switch (_postFix) do " \n "		{" \n "			case ""EN"": " \n "			{" \n "				_text = localize ""STR_CONV_CORE_WESHOULDBE"";" \n "				_speech = [""WeShouldBe_EN""];" \n "			};" \n "			case ""RU"":" \n "			{" \n "				_text = localize ""STR_CONV_CORE_WESHOULDBE"";" \n "				_speech = [""WeShouldBe_RU""];" \n "			};" \n "			case ""CZ"": " \n "			{" \n "				_text = localize ""STR_CONV_CORE_WESHOULDBE"";" \n "				_speech = [""WeShouldBe_CZ""];" \n "			};" \n "		};" \n "		" \n "		_text = _text + "" %PLACE0."";" \n "		_speech = _speech + [""%PLACE0""];" \n "	};" \n "	case 1: " \n "	{" \n "		switch (_postFix) do " \n "		{" \n "			case ""EN"": " \n "			{" \n "				_text = localize ""STR_CONV_CORE_WEARE"";" \n "				_speech = [""WeAre_EN""];" \n "			};" \n "			case ""RU"":" \n "			{" \n "				_text = localize ""STR_CONV_CORE_WEARE"";" \n "				_speech = [""WeAre_RU""];" \n "			};" \n "			case ""CZ"": " \n "			{" \n "				_text = localize ""STR_CONV_CORE_WEARE"";" \n "				_speech = [""WeAre_CZ""];" \n "			};" \n "		};" \n "		" \n "		_text = _text + "" %PLACE0."";" \n "		_speech = _speech + [""%PLACE0""];" \n "	};" \n "};" \n "" \n "_this kbTell [_from, _topic, [""Location"" + ""_"" +  _postFix, _text + "" "" + _hint, _speech]] + _arguments;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respond__closest">*/
+    class Respond__closest
+    {
+      name = "Respond__closest";
+      init = /*%FSM<STATEINIT""">*/"private [""_text"", ""_speech"", ""_arguments""];" \n "_arguments = [[""PLACE0"", [position _this, 5, """"]]];" \n "_text = ""%PLACE0."";" \n "_speech = [""%PLACE0""];" \n "" \n "_this kbTell [_from, _topic, [""LocationClosest"" + ""_"" +  _postFix, _text + "" "" + _hint, _speech]] + _arguments;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respond__name">*/
+    class Respond__name
+    {
+      name = "Respond__name";
+      init = /*%FSM<STATEINIT""">*/"private [""_text"", ""_speech"", ""_arguments""];" \n "_arguments = [[""PLACE0"", [position _this, 5, """"]]];" \n "" \n "switch (floor (random 3)) do " \n "{" \n "	case 0: " \n "	{" \n "		switch (_postFix) do " \n "		{" \n "			case ""EN"": " \n "			{" \n "				_text = localize ""STR_CONV_CORE_ITSCALLED"";" \n "				_speech = [""ItsCalled_EN""];" \n "			};" \n "			case ""RU"":" \n "			{" \n "				_text = localize ""STR_CONV_CORE_ITSCALLED"";" \n "				_speech = [""ItsCalled_RU""];" \n "			};" \n "			case ""CZ"": " \n "			{" \n "				_text = localize ""STR_CONV_CORE_ITSCALLED"";" \n "				_speech = [""ItsCalled_CZ""];" \n "			};" \n "		};" \n "		" \n "		_text = _text + "" %PLACE0."";" \n "		_speech = _speech + [""%PLACE0""];" \n "	};" \n "	case 1: " \n "	{" \n "		switch (_postFix) do " \n "		{" \n "			case ""EN"": " \n "			{" \n "				_text = localize ""STR_CONV_CORE_ITSNAMEIS"";" \n "				_speech = [""ItsNameIs_EN""];" \n "			};" \n "			case ""RU"":" \n "			{" \n "				_text = localize ""STR_CONV_CORE_ITSNAMEIS"";" \n "				_speech = [""ItsNameIs_RU""];" \n "			};" \n "			case ""CZ"": " \n "			{" \n "				_text = localize ""STR_CONV_CORE_ITSNAMEIS"";" \n "				_speech = [""ItsNameIs_CZ""];" \n "			};" \n "		};" \n "		" \n "		_text = _text + "" %PLACE0."";" \n "		_speech = _speech + [""%PLACE0""];" \n "	};" \n "	case 2: " \n "	{" \n "		switch (_postFix) do " \n "		{" \n "			case ""EN"": " \n "			{" \n "				_text = localize ""STR_CONV_CORE_THISIS"";" \n "				_speech = [""ThisIs_EN""];" \n "			};" \n "			case ""RU"":" \n "			{" \n "				_text = localize ""STR_CONV_CORE_THISIS"";" \n "				_speech = [""ThisIs_RU""];" \n "			};" \n "			case ""CZ"": " \n "			{" \n "				_text = localize ""STR_CONV_CORE_THISIS"";" \n "				_speech = [""ThisIs_CZ""];" \n "			};" \n "		};" \n "		" \n "		_text = _text + "" %PLACE0."";" \n "		_speech = _speech + [""%PLACE0""];" \n "	};" \n "};" \n "" \n "_this kbTell [_from, _topic, [""LocationThis"" + ""_"" +  _postFix, _text + "" "" + _hint, _speech]] + _arguments;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Determine__knowl">*/
+    class Determine__knowl
+    {
+      name = "Determine__knowl";
+      init = /*%FSM<STATEINIT""">*/"//Currently knowledge of the surroundings is random, but stored." \n "private [""_knowledge""];" \n "_knowledge = _this getVariable ""BIS_locationKnowledge"";" \n "if (isNil ""_knowledge"") then " \n "{" \n "	_knowledge = random 1;" \n "	_this setVariable [""BIS_locationKnowledge"", _knowledge, true];" \n "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "No_idea">*/
+        class No_idea
+        {
+          priority = 2.000000;
+          to="Respond__clueles";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_knowledge > 0.5)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Name__settlement">*/
+        class Name__settlement
+        {
+          priority = 1.000000;
+          to="Respond__name";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_sentenceId in " \n "[" \n "	""WhatIsTheNameOfThisSettlement_EN"", " \n "	""WhatIsTheNameOfThisSettlement_RU"", " \n "	""WhatIsTheNameOfThisSettlement_CZ"", " \n "	""WhatSettlementIsThis_EN"", " \n "	""WhatSettlementIsThis_RU"", " \n "	""WhatSettlementIsThis_CZ""" \n "];"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Closest__settlement">*/
+        class Closest__settlement
+        {
+          priority = 1.000000;
+          to="Respond__closest";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_sentenceId in " \n "[" \n "	""WhereIsTheClosestSettlement_EN"", " \n "	""WhereIsTheClosestSettlement_RU"", " \n "	""WhereIsTheClosestSettlement_CZ"", " \n "	""CanYouPointMeToTheNearestSettlement_EN"", " \n "	""CanYouPointMeToTheNearestSettlement_RU"", " \n "	""CanYouPointMeToTheNearestSettlement_CZ""" \n "];"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Where_">*/
+        class Where_
+        {
+          priority = 1.000000;
+          to="Respond__where";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_sentenceId in " \n "[" \n "	""WhereAreWe_EN"", " \n "	""WhereAreWe_RU"", " \n "	""WhereAreWe_CZ"", " \n "	""DoYouKnowWhereWeAre_EN"", " \n "	""DoYouKnowWhereWeAre_RU"", " \n "	""DoYouKnowWhereWeAre_CZ""" \n "];"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respond__clueles">*/
+    class Respond__clueles
+    {
+      name = "Respond__clueles";
+      init = /*%FSM<STATEINIT""">*/"private [""_sentence""];" \n "if ((random 1) > 0.5) then " \n "{" \n "	_sentence = ""SorryImNotFromAroundHere"";" \n "} " \n "else " \n "{" \n "	_sentence = ""NoIdeaImNotFromAroundHere"";" \n "};" \n "" \n "_this kbTell [_from, _topic, (_sentence + ""_"" + _postFix)];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Determine_specific">*/
+    class Determine_specific
+    {
+      name = "Determine_specific";
+      init = /*%FSM<STATEINIT""">*/"_tags = _tags + [""to"" + (rank _from)];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Determine_instigator";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "No_reaction_1">*/
+    class No_reaction_1
+    {
+      name = "No_reaction_1";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check_time_since">*/
+    class Check_time_since
+    {
+      name = "Check_time_since";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Too_soon">*/
+        class Too_soon
+        {
+          priority = 1.000000;
+          to="No_reaction_2";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_from in _greetedPeople)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Otherwise">*/
+        class Otherwise
+        {
+          priority = 0.000000;
+          to="Determine_partner";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "No_reaction_2">*/
+    class No_reaction_2
+    {
+      name = "No_reaction_2";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Init_greeting__h">*/
+    class Init_greeting__h
+    {
+      name = "Init_greeting__h";
+      init = /*%FSM<STATEINIT""">*/"//Initialize greeting history arrays." \n "//For _this." \n "private [""_greetedPeople"", ""_greetedTimes"", ""_greetedLanguages"", ""_greetedByPeople"", ""_greetedByTimes"", ""_greetedByLanguages"", ""_greetedByEvil""];" \n "_greetedPeople = _this getVariable ""BIS_greetedPeople"";" \n "if (isNil ""_greetedPeople"") then " \n "{" \n "	_greetedPeople = [];" \n "	_greetedTimes = [];" \n "	_greetedLanguages = [];" \n "} " \n "else " \n "{" \n "	_greetedTimes = _this getVariable ""BIS_greetedTimes"";" \n "	_greetedLanguages = _this getVariable ""BIS_greetedLanguages"";" \n "};" \n "" \n "_greetedByPeople = _this getVariable ""BIS_greetedByPeople"";" \n "if (isNil ""_greetedByPeople"") then " \n "{" \n "	_greetedByPeople = [];" \n "	_greetedByTimes = [];" \n "	_greetedByLanguages = [];" \n "	_greetedByEvil = [];" \n "} " \n "else " \n "{" \n "	_greetedByTimes = _this getVariable ""BIS_greetedByTimes"";" \n "	_greetedByLanguages = _this getVariable ""BIS_greetedByLanguages"";" \n "	_greetedByEvil = _this getVariable ""BIS_greetedByEvil"";" \n "};" \n "" \n "//For _from." \n "private [""_greetedPeopleFrom"", ""_greetedTimesFrom"", ""_greetedLanguagesFrom"", ""_greetedByPeopleFrom"", ""_greetedByTimesFrom"", ""_greetedByLanguagesFrom"", ""_greetedByEvilFrom""];" \n "_greetedPeopleFrom = _from getVariable ""BIS_greetedPeople"";" \n "if (isNil ""_greetedPeopleFrom"") then " \n "{" \n "	_greetedPeopleFrom = [];" \n "	_greetedTimesFrom = [];" \n "	_greetedLanguagesFrom = [];" \n "} " \n "else " \n "{" \n "	_greetedTimesFrom = _from getVariable ""BIS_greetedTimes"";" \n "	_greetedLanguagesFrom = _from getVariable ""BIS_greetedLanguages"";" \n "};" \n "" \n "_greetedByPeopleFrom = _from getVariable ""BIS_greetedByPeople"";" \n "if (isNil ""_greetedByPeopleFrom"") then " \n "{" \n "	_greetedByPeopleFrom = [];" \n "	_greetedByTimesFrom = [];" \n "	_greetedByLanguagesFrom = [];" \n "	_greetedByEvilFrom = [];	" \n "} " \n "else " \n "{" \n "	_greetedByTimesFrom = _from getVariable ""BIS_greetedByTimes"";" \n "	_greetedByLanguagesFrom = _from getVariable ""BIS_greetedByLanguages"";" \n "	_greetedByEvilFrom = _from getVariable ""BIS_greetedByEvil"";	" \n "};" \n "" \n "//Forgetting for _this." \n "//Process forgetting of greetings after 5 minutes." \n "for ""_i"" from 0 to ((count _greetedTimes) - 1) do " \n "{" \n "	if ((time - (_greetedTimes select _i)) >= 300) then " \n "	{" \n "		_greetedTimes set [_i, -1];" \n "		_greetedPeople set [_i, -1];" \n "		_greetedLanguages set [_i, -1];" \n "	};" \n "};" \n "" \n "for ""_i"" from 0 to ((count _greetedByTimes) - 1) do " \n "{" \n "	if ((time - (_greetedByTimes select _i)) >= 300) then " \n "	{" \n "		_greetedByTimes set [_i, -1];" \n "		_greetedByPeople set [_i, -1];" \n "		_greetedByLanguages set [_i, -1];" \n "		_greetedByEvil set [_i, -1];" \n "	};" \n "};" \n "" \n "_greetedTimes = _greetedTimes - [-1];" \n "_greetedPeople = _greetedPeople - [-1];" \n "_greetedLanguages = _greetedLanguages - [-1];" \n "_greetedByTimes = _greetedByTimes - [-1];" \n "_greetedByPeople = _greetedByPeople - [-1];" \n "_greetedByLanguages = _greetedByLanguages - [-1];" \n "_greetedByEvil = _greetedByEvil - [-1];" \n "" \n "" \n "//Forgetting for _from." \n "//Process forgetting of greetings after 5 minutes." \n "for ""_i"" from 0 to ((count _greetedTimesFrom) - 1) do " \n "{" \n "	if ((time - (_greetedTimesFrom select _i)) >= 300) then " \n "	{" \n "		_greetedTimesFrom set [_i, -1];" \n "		_greetedPeopleFrom set [_i, -1];" \n "		_greetedLanguagesFrom set [_i, -1];" \n "	};" \n "};" \n "" \n "for ""_i"" from 0 to ((count _greetedByTimesFrom) - 1) do " \n "{" \n "	if ((time - (_greetedByTimesFrom select _i)) >= 300) then " \n "	{" \n "		_greetedByTimesFrom set [_i, -1];" \n "		_greetedByPeopleFrom set [_i, -1];" \n "		_greetedByLanguagesFrom set [_i, -1];" \n "		_greetedByEvilFrom set [_i, -1];" \n "	};" \n "};" \n "" \n "_greetedTimesFrom = _greetedTimesFrom - [-1];" \n "_greetedPeopleFrom = _greetedPeopleFrom - [-1];" \n "_greetedLanguagesFrom = _greetedLanguagesFrom - [-1];" \n "_greetedByTimesFrom = _greetedByTimesFrom - [-1];" \n "_greetedByPeopleFrom = _greetedByPeopleFrom - [-1];" \n "_greetedByLanguagesFrom = _greetedByLanguagesFrom - [-1];" \n "_greetedByEvilFrom = _greetedByEvilFrom - [-1];" \n "" \n "//Store the updated list of people and times." \n "_this setVariable [""BIS_greetedPeople"", _greetedPeople, true];" \n "_this setVariable [""BIS_greetedTimes"", _greetedTimes, true];" \n "_this setVariable [""BIS_greetedLanguages"", _greetedLanguages, true];" \n "_this setVariable [""BIS_greetedByPeople"", _greetedByPeople, true];" \n "_this setVariable [""BIS_greetedByTimes"", _greetedByTimes, true];" \n "_this setVariable [""BIS_greetedByLanguages"", _greetedByLanguages, true];" \n "_this setVariable [""BIS_greetedByEvil"", _greetedByEvil, true];" \n "" \n "_from setVariable [""BIS_greetedPeople"", _greetedPeopleFrom, true];" \n "_from setVariable [""BIS_greetedTimes"", _greetedTimesFrom, true];" \n "_from setVariable [""BIS_greetedLanguages"", _greetedLanguagesFrom, true];" \n "_from setVariable [""BIS_greetedByPeople"", _greetedByPeopleFrom, true];" \n "_from setVariable [""BIS_greetedByTimes"", _greetedByTimesFrom, true];" \n "_from setVariable [""BIS_greetedByLanguages"", _greetedByLanguagesFrom, true];" \n "_from setVariable [""BIS_greetedByEvil"", _greetedByEvilFrom, true];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Register_greeting";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Register_greeting">*/
+    class Register_greeting
+    {
+      name = "Register_greeting";
+      init = /*%FSM<STATEINIT""">*/"//_from apparently sent a greeting to _this." \n "//If it's registered, update the time. If not, add it." \n "private [""_index""];" \n "_index = _greetedPeopleFrom find _this;" \n "if (_index != -1) then " \n "{" \n "	_greetedTimesFrom set [_index, time];" \n "	_greetedLanguagesFrom set [_index, _postFix];" \n "} " \n "else " \n "{" \n "	_greetedPeopleFrom = _greetedPeopleFrom + [_this];" \n "	_greetedTimesFrom = _greetedTimesFrom + [time];" \n "	_greetedLanguagesFrom = _greetedLanguagesFrom + [_postFix];" \n "};" \n "" \n "_index = _greetedByPeople find _from;" \n "if (_index != -1) then " \n "{" \n "	_greetedByTimes set [_index, time];" \n "	_greetedByLanguages set [_index, _postFix];" \n "} " \n "else " \n "{" \n "	_greetedByPeople = _greetedByPeople + [_from];" \n "	_greetedByTimes = _greetedByTimes + [time];" \n "	_greetedByLanguages = _greetedByLanguages + [_postFix];" \n "};" \n "" \n "_from setVariable [""BIS_greetedPeople"", _greetedPeopleFrom, true];" \n "_from setVariable [""BIS_greetedTimes"", _greetedTimesFrom, true];" \n "_from setVariable [""BIS_greetedLanguages"", _greetedLanguagesFrom, true];" \n "" \n "_this setVariable [""BIS_greetedByPeople"", _greetedByPeople, true];" \n "_this setVariable [""BIS_greetedByTimes"", _greetedByTimes, true];" \n "_this setVariable [""BIS_greetedByLanguages"", _greetedByLanguages, true];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Check_time_since";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Register_in__greeting">*/
+    class Register_in__greeting
+    {
+      name = "Register_in__greeting";
+      init = /*%FSM<STATEINIT""">*/"private [""_badResponses""];" \n "_badResponses = " \n "[" \n "	""IWillTellYouNothing"", " \n "	""ImNotSayingAnotherWord"", " \n "	""KeepingMyMouthShut"", " \n "	""MindYourOwnBusiness"", " \n "	""GoBotherSomeoneElse"", " \n "	""CantYouSeeImBusy"", " \n "	""BitOccupiedAtTheMomentDude"", " \n "	""ImBusy"", " \n "	""PissOff"", " \n "	""NotNow"", " \n "	""Later"", " \n "	""NoTime"", " \n "	""Hush"", " \n "	""Ssshh"", " \n "	""IWillOnlyTellYouMyNameRankAndSerialnumber""" \n "];" \n "" \n "//Register the greeting from _this to _from." \n "_greetedTimes = _greetedTimes + [time];" \n "_greetedPeople = _greetedPeople + [_from];" \n "_greetedLanguages = _greetedLanguages + [_postFix];" \n "" \n "_greetedByPeopleFrom = _greetedByPeopleFrom + [_this];" \n "_greetedByTimesFrom = _greetedByTimesFrom + [time];" \n "_greetedByLanguagesFrom = _greetedByLanguagesFrom + [_postFix];" \n "" \n "//We received a bad greeting, so register that." \n "if (_sentence in _badResponses) then " \n "{" \n "	_greetedByEvilFrom = _greetedByEvilFrom + [true];" \n "} " \n "else " \n "{" \n "	_greetedByEvilFrom = _greetedByEvilFrom + [false];" \n "};" \n "" \n "//Store the updated list of people, times and languages." \n "_this setVariable [""BIS_greetedPeople"", _greetedPeople, true];" \n "_this setVariable [""BIS_greetedTimes"", _greetedTimes, true];" \n "_this setVariable [""BIS_greetedLanguages"", _greetedLanguages, true];" \n "" \n "_from setVariable [""BIS_greetedByPeople"", _greetedByPeopleFrom, true];" \n "_from setVariable [""BIS_greetedByTimes"", _greetedByTimesFrom, true];" \n "_from setVariable [""BIS_greetedByLanguages"", _greetedByLanguagesFrom, true];" \n "_from setVariable [""BIS_greetedByEvil"", _greetedByEvilFrom, true];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Send_greeting";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Determine_surrender">*/
+    class Determine_surrender
+    {
+      name = "Determine_surrender";
+      init = /*%FSM<STATEINIT""">*/"if (captive _this) then " \n "{" \n "	_tags = _tags + [""surrendered""];" \n "" \n "	//We cannot be positive while surrendered." \n "	_tags = _tags - [""positive""];" \n "	_tags = _tags + [""negative""];" \n "} " \n "else " \n "{" \n "	_tags = _tags + [""notSurrendered""];	" \n "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Always">*/
+        class Always
+        {
+          priority = 0.000000;
+          to="Select_random__";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Respond__no_targ">*/
+    class Respond__no_targ
+    {
+      name = "Respond__no_targ";
+      init = /*%FSM<STATEINIT""">*/"private [""_sentence""];" \n "if ((random 1) > 0.5) then " \n "{" \n "	_sentence = ""NoSorry"";" \n "} " \n "else " \n "{" \n "	_sentence = ""IDidntSeeAnything"";" \n "};" \n "" \n "_this kbTell [_from, _topic, (_sentence + ""_"" + _postFix)];" \n ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Friendly_Targets">*/
+    class Friendly_Targets
+    {
+      name = "Friendly_Targets";
+      init = /*%FSM<STATEINIT""">*/"//Query for all targets matching conditions" \n "private [""_sides"", ""_candidates""];" \n "" \n "_candidates = _this targetsQuery [_from, side _from, """", """", """"];" \n "" \n "//We only want precise matches (enemies)." \n "private [""_candidatesTmp""];" \n "_candidatesTmp = [];" \n "{" \n "	if ((_x select 0) >= 1) then" \n "	{" \n "		_candidatesTmp = _candidatesTmp + [_x];" \n "	};" \n "} " \n "forEach _candidates;" \n "" \n "_candidates = _candidatesTmp;" \n ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Found">*/
+        class Found
+        {
+          priority = 1.000000;
+          to="Targets__aggrega";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(count _candidates) > 0"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Not_found">*/
+        class Not_found
+        {
+          priority = 0.000000;
+          to="Respond__no_targ";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="React";
+  finalStates[] =
+  {
+    "No_reaction",
+    "Send_greeting",
+    "Respond_similar",
+    "Respond_rain",
+    "Respond_clear",
+    "Respond_too_soon",
+    "Respond__targets",
+    "Respond_thanks",
+    "Respond__where",
+    "Respond__closest",
+    "Respond__name",
+    "Respond__clueles",
+    "No_reaction_1",
+    "No_reaction_2",
+    "Respond__no_targ",
+  };
+};
+/*%FSM</COMPILE>*/
