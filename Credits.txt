@@ -1,0 +1,50 @@
+Original Taviana map work by Martin.
+
+CREDITS
+All credit for this map belongs to its original author (Martin Bauer) and those listed below:
+— Martin (Height map, sat + layer mask, all object placement, modelling, texturing, object animation)
+— Bushlurker (Countless help and support =) )
+— Richard (Help in modelling of various models)
+— Hevoc100 (Coming up with the name - Taviana)
+— Broseph (Various textures for models)
+— Zenger (Tavianas release screenarts, support and regular updating of arma.at.ua with Taviana news)
+— BIS (Creating the wonderful engine and amazing game)
+— Fargustino (Improving the satellite mask, ideas and race track model)
+— DKM MOD (Windmills)
+— Ensk Island team (Lenin Statue, wooden church and more...)
+— Electronic engineers (for making all this technology possible)
+— Pathetic_Berserker (Stadium)
+— USEC, Mattaust & Rocket (Offshore rigs)
+— Kamp (Config help, BETA testig)
+— Robster (Numerous support, terrain help, satelite and layer ask help, bug fixing, advice and guidance)
+— KamikadzeVM (Various building models)
+Taviana Map from version 1.0 to version 3.0 (Origins Mod 1.7.7 release 2013.09.25):
+
+All credit for this map belongs to its original author (Martin Bauer) and those listed below:
+— Martin (Height map, sat + layer mask, all object placement, modelling, texturing, object animation)
+— Richard (Help in modelling of various models)
+— RonHillUltra (Bojan) - for awesome Sabina Ivan Lab v1.0
+— Spageti (Sector B Walls and Towers version v1.0)
+— KinGHuNT (awesome ideas, suggestions and best head of the project, sector B research and ideas Ivan story)
+— AlexSpain (awesome ideas, suggestions, AI research, optimization, lead developer)
+— DayzLand community
+— Vilas (ideas, suggestions, awesome models)
+— Alexander (Origins GUI icons)
+Taviana Map version 3.5 (Origins Mod 1.7.8.5 release 2014.02.23)
+
+— Hitretz (rework height map, sattelite+layer mask fix, replacement and optimization of map buildings, objects, some map animations)
+— Apestle (replacements car wreks on the map, town buildings placement optimization)
+— AlexSpain (suggestions, AI research, optimization, lead developer)
+— Felix (UN military base, prepare towns for the missions, new towns)
+— f0rt (codestyle support, ideas and common bugfixes)
+— our vk.com and facebook.com community (support, ideas)
+Origins Mod 1.7.9 Designers team:
+
+— Wilwarin (3d art, image art, 3d/image optimization, also great person and creative girl)
+— Mike "FaustGT" Dronoff (3d models, optimization, serious man for serious job)
+— GeriX (3d models, ideas and german community manager)
+Origins Mod community managers:
+
+— Joe
+— Waffeleisen
+— Lucas False

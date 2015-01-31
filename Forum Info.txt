@@ -1,0 +1,33 @@
+The purpose of this remake is to provide a single set of client files which all server hosts can use.
+
+This way all people who want to play Taviana will only have to download one set of files, which prevents confusion and problems.
+
+ 
+
+To do this, there is a couple of things that I'd like you all to consider.
+
+ 
+
+    This is NOT finished. There might still be missing textures etc. (Haven't had one in 10 hours)
+    Do NOT change stuff yourself in the client files. It would destroy the entire purpose of having one set of files.
+    If you find any bugs/errors, feel free to contact me and maybe I can fix them in a next update.
+
+ 
+
+Before anyone flaming that I post a link to my own forums for the download
+
+Because of the fact that the Taviana author does NOT allow Epochmod to talk/post/.. his work, I CANNOT post a direct download link here.
+
+I however can guide u to the topic that has it ;)
+
+ 
+
+You don't have to sign up to download it, but I'd appreciate if you could rate the file.
+
+ 
+
+http://gfsgaming.com/index.php?/topic/157-taviana-download/
+
+ 
+
+-Santa
