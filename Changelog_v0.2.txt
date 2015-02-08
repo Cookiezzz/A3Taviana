@@ -1,8 +1,12 @@
 INITIAL RELEASE - 28 Jan 2015 v0.1
 
+-Fixed texture errors (Santa)
 
 UPDATE - 08 feb 2015 - v0.2
 [8 FEB 2015]
+-Added - added new enterable and updated buildings http://www.armaholic.com/page.php?id=26806 Credits to M1lkm8n and Smokedog (GZA)
+-Added - Added An2 Biplanes http://forums.bistudio.com/showthread.php?187123-Antonow-An-2-for-Arma-3
+
 -Fixed - Replaced loadingscreen
 -Fixed - Structure - Replaced bridge model with a working one
 -Fixed - Sound - Replaced arabian_market_5.wss with a working version
@@ -10,9 +14,5 @@ UPDATE - 08 feb 2015 - v0.2
 -Fixed - Fixed bridges bridges (GZA)
 -Fixed - Fixed barriers that were turned 90° (GZA)
 
--Improvement - map cleanup (removed many wrecks, trash and plants) (GZA)
-
--Added - added new enterable and updated buildings http://www.armaholic.com/page.php?id=26806 Credits to M1lkm8n and Smokedog (GZA)
--Added - Added An2 Biplanes http://forums.bistudio.com/showthread.php?187123-Antonow-An-2-for-Arma-3
-
+-Removed - map cleanup (removed many wrecks, trash and plants) (GZA)
 -Removed - removed some unused textures to lower pack size (GZA)
