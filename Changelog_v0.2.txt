@@ -2,7 +2,7 @@ INITIAL RELEASE - 28 Jan 2015 v0.1
 
 
 UPDATE - 08 feb 2015 - v0.2
-[X FEB 2015]
+[8 FEB 2015]
 -Fixed - Replaced loadingscreen
 -Fixed - Structure - Replaced bridge model with a working one
 -Fixed - Sound - Replaced arabian_market_5.wss with a working version
