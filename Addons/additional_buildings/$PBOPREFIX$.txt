@@ -1,0 +1,6 @@
+zero_buildings
+======<HEADER>=======
+prefix=zero_buildings
+Pbo Type is: Arma Addon
+Sha: '1DEC7FFCDD4FF2CD436F01426480B66A2F8A9065'
+======</HEADER>============

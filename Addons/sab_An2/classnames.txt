@@ -1,0 +1,50 @@
+An-2 for Arma 3 Classnames
+
+********** civilian An-2s  ************************
+
+sab_cz_An2 		- An-2 Czech Aero Club
+Sab_ee_An2 		- An-2 Estonian Air Force
+Sab_ru_An2 		- An-2 Russian Air Force
+Sab_yel_An2 	- An-2 Big Panda
+Sab_fd_An2 		- An-2 fictional Fire Fighter
+Sab_ana_An2	 	- An-2 Anastasija 
+
+********** special civilian hp plane ***************
+
+sab_ca_An2 		- An-2 fictional Air Racing Plane
+
+********** Arctic/Snow Classes *********************
+
+Sab_Snow_An2  	- An-2 Snow Blue
+Sab_Snow2_An2 	- An-2 Aeroflot
+Sab_Snow3_An2 	- An-2 Russian AF Variant
+
+********** Sea Plane Classes *********************** 
+
+Sab_sea_An2 	- An-2 Aeroflot
+Sab_sea2_An2 	- An-2 Anastasija
+Sab_sea3_An2	- An-2 Russian AF Variant
+Sab_sea4_An2  	- An-2 Fire Tanker
+Sab_Amphi_An2 	- An-2 Sightseeing
+
+********** original Arma2OA classes *****************
+
+Sab_af_An2 		- An-2 Aeroflot
+Sab_tk_An2 		- An-2 AirTak
+Sab_A2_An2 		- An-2 Takistani Army
+
+********** Fun Classes ********************************
+
+sab_BI_An2 		- An-2 Bohemia Interactive Promo Plane
+sab_AH_An2 		- An-2 Armaholic Promo Plane
+
+********** Armed/Fun Classes ***************************
+
+Sab_An2_b 		- An-2 Bluefor 
+Sab_An2_i 		- An-2 Independant 
+Sab_An2_o 		- An-2 Opfor (Tak AF)
+
+********************************************************
+		
+		
+		
