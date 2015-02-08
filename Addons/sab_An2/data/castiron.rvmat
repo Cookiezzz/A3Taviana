@@ -1,0 +1,10 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 3.52
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class Ca : sab_An2\data\castiron.rvmat{
+surfaceInfo = "sab_An2\data\castIron.bisurf";
+

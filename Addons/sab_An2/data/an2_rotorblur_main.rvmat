@@ -1,0 +1,4 @@
+class StageTI
+{
+	texture="sab_An2\data\vrtule_blur_ti_ca.tga";
+};
