@@ -1,4 +1,21 @@
+Taviana 0.2 for Arma 3 Epoch.
+
+Fixed up to 'work' with Arma 3 by Santa. (GFSGaming.com)
+
+DO NOT CHANGE ANYTHING IN THIS ADDON YOURSELF
+The purpose of this pack is to create a single Taviana addon which can be used across all Arma 3 servers so players don't have to use different addons for different servers.
+
+If you would like to see anything changed, added or removed, contact Santa.
+
+If you still find missing textures, errors,... please contact Santa.
+
+contact: gfsgaming.com or santa@gfsgaming.com
+
+
 Original Taviana map work by Martin.
+JBAD Buildings Credits to M1lkm8n & Smokedog http://www.armaholic.com/page.php?id=26806
+A3: Emod - by maca134@gmail.com
+Reworked models by @Tansien and the DayZero crew.
 
 CREDITS
 All credit for this map belongs to its original author (Martin Bauer) and those listed below:
